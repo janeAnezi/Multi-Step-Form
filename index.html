@@ -7,8 +7,8 @@
     <link href="./src/main.css" rel="stylesheet">
 </head>
 <body class="font-sans h-screen flex items-center justify-center bg-slate-100">
-    <div class=" flex items-center justify-center bg-white">
-        <div class="side-panel h-96 m-3 text-white p-3 bg-no-repeat bg-center bg-cover" style="background-image: url(./src/images/bg-sidebar-desktop.svg)">
+    <div class=" flex items-center justify-center bg-white rounded-md">
+        <div class="side-panel h-96 m-3 text-white rounded-md p-4 pr-9 bg-no-repeat bg-center bg-cover" style="background-image: url(./src/images/bg-sidebar-desktop.svg)">
             <div class="step-1 flex bg-fixed mb-3" >
                 <button class="w-6 h-6 border rounded-full flex items-center justify-center text-xs mt-1">1</button>
                 <div class="text-xs ml-2">
@@ -38,20 +38,23 @@
                 </div>
             </div>
         </div>
-        <div class="main-content w-64">
+        <div class="main-content w-64 mx-14">
             <h1>Personal Info</h1>
             <p>Please provide you name, email address and phone number</p>
             <form action="">
-                <label for="name">Name </label> <br>
-                <input class="border inline-block w-64" type="text" placeholder="e.g Stephen King">
-                <br>
+                <label for="name">Name  <br>
+                    <input class="border inline-block w-64" type="text" placeholder="e.g Stephen King">
+                </label> <br>
                 <label for="name">Email Address <br>
                     <input class="border w-64" type="text" placeholder="e.g stephening@gmail.com">
                 </label> <br>
                 <label for="name">Phone Number <br>
                     <input class="border w-64" type="text" placeholder="e.g +234 9035632119">
                 </label>
-                
+
+                <div class="relative">
+                    <button class="absolute right-0 pt-8">Next Step</button>
+                </div>
             </form>
         </div>
     </div>
