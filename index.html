@@ -39,23 +39,59 @@
             </div>
         </div>
         <div class="main-content px-7  mx-7 mt-10">
-            <h1 class="font-bold text-2xl">Personal Info</h1>
-            <p class="text-xs text-slate-600 mb-5">Please provide you name, email address and phone number</p>
-            <form action="">
-                <label for="name" class="text-sm">Name  <br>
-                    <input id="name" class="border p-2 mb-2 rounded-sm inline-block w-80 text-xs" type="text" placeholder="e.g Stephen King" required>
-                </label> <br>
-                <label for="email" class="text-sm">Email Address <br>
-                    <input id="email" class="border p-2 mb-2 rounded-sm w-80 text-xs" type="text" placeholder="e.g stephening@gmail.com" required>
-                </label> <br>
-                <label for="phone" class="text-sm">Phone Number <br>
-                    <input id="phone" class="border p-2 rounded-sm w-80 text-xs mb-3 " type="text" placeholder="e.g +234 9035632119" required>
-                </label>
+            <div class="hidden">
+                <h1 class="font-bold text-2xl">Personal Info</h1>
+                <p class="text-xs text-slate-600 mb-5">Please provide you name, email address and phone number</p>
+                <form action="">
+                    <label for="name" class="text-sm">Name  <br>
+                        <input id="name" class="border p-2 mb-2 rounded-md inline-block w-80 text-xs" type="text" placeholder="e.g Stephen King" required>
+                    </label> <br>
+                    <label for="email" class="text-sm">Email Address <br>
+                        <input id="email" class="border p-2 mb-2 rounded-md w-80 text-xs" type="text" placeholder="e.g stephening@gmail.com" required>
+                    </label> <br>
+                    <label for="phone" class="text-sm">Phone Number <br>
+                        <input id="phone" class="border p-2 rounded-md w-80 text-xs mb-3 " type="text" placeholder="e.g +234 9035632119" required>
+                    </label>
 
-                <div class="relative">
-                    <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white">Next Step</button>
-                </div>
-            </form>
+                    <div class="relative">
+                        <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white">Next Step</button>
+                    </div>
+                </form> 
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl">Select Your Plan</h1>
+                <p class="text-xs text-slate-600 mb-5">You have the option of monthly or yearly billing.</p>
+                <form action="" >
+                    <div class="flex space-x-3">
+                        <div class="arcade border w-32 rounded-md pl-3 py-3">
+                            <img class="pb-5" src="./src/images/icon-arcade.svg" alt="icon arcade">
+                            <p class="font-bold text-slate-700 text-sm">Arcade</p>
+                            <p class="text-xs text-slate-400">$9/mo</p>
+                        </div>
+                        <div class="arcade border w-32 rounded-md pl-3 py-3">
+                            <img class="pb-5" src="./src/images/icon-advanced.svg" alt="icon arcade">
+                            <p class="font-bold text-slate-700 text-sm">Advanced</p>
+                            <p class="text-xs text-slate-400">$12/mo</p>
+                        </div>
+                        <div class="arcade border w-32 rounded-md pl-3 py-3">
+                            <img class="pb-5" src="./src/images/icon-pro.svg" alt="icon arcade">
+                            <p class="font-bold text-slate-700 text-sm">Pro</p>
+                            <p class="text-xs text-slate-400">$15/mo</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center mt-6 text-sm bg-slate-50 py-2">
+                        <p>Monthly</p>
+                        <button class="w-7 h-4 mx-3 mt-1 rounded-lg bg-slate-700"><div class="h-3 w-3 bg-white rounded-full"></div></button>
+                        <p class="text-slate-500">yearly</p>
+                    </div>
+                    
+                    <div class="relative">
+                        <button class="absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-700">Next Step</button>
+                    </div>
+                </form> 
+            </div>
+            
         </div>
     </div>
 </body>
