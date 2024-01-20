@@ -8,12 +8,16 @@ function showContent(pageId) {
     // Remove active class from all buttons
     var buttons = document.getElementsByClassName('btn');
     for (var i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove('active');
+      buttons[i].classList.toggle('bg-blue-500');
     }
 
     // Show the selected content section
     document.getElementById(pageId).style.display = 'block';
 
     // Add active class to the clicked button
-    document.getElementsByClassName('btn' + pageId.slice(-1)).classList.add('active');
+    var button = document.querySelector('.btn' + pageId.slice(-1));
+    if (button) {
+      button.classList.add('bg-cyan-200');
+    }
+  
   }
