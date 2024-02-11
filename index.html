@@ -82,7 +82,7 @@
                     
                     <div class="flex items-center justify-center mt-6 text-sm bg-slate-50 py-2">
                         <p>Monthly</p>
-                        <button class="w-7 h-4 mx-3 mt-1 rounded-lg bg-slate-700"><div class="h-3 w-3 bg-white rounded-full"></div></button>
+                        <button id="toggle-btn" class="w-7 h-4 mx-3 mt-1 rounded-lg bg-slate-700"><div class="h-3 w-3 bg-white rounded-full"></div></button>
                         <p class="text-slate-500">yearly</p>
                     </div>
                     
@@ -201,10 +201,10 @@
                 </form> 
             </div>
             <div id="summary-section" class="page-content">
-                <div class="hidden">
+                <div>
                     <h1 class="font-bold text-2xl">Finishing up</h1>
                     <p class="text-xs text-slate-600 mb-5">Double-check everything looks ok before confirming.</p>
-                    <form action="" class="hidden" >
+                    <form>
                         <div class="mt-6 text-sm bg-slate-50 p-2">
                             <div class="flex justify-between mb-3">
                                 <div >
@@ -239,45 +239,45 @@
                             <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-900 text-white hover:bg-indigo-400">Confirm</button>
                         </div>
                     </form>
-                </div>
                
                  <!--yearly summary  -->
-                <form action="" class="hidden" >
-                    <div class="mt-6 text-sm bg-slate-50 p-2">
-                        <div class="flex justify-between mb-3">
+                    <form action="" class="hidden" >
+                        <div class="mt-6 text-sm bg-slate-50 p-2">
+                            <div class="flex justify-between mb-3">
+                                <div >
+                                    <p class="font-bold">Arcade (Yearly)</p>
+                                    <p class="underline text-xs hover:text-indigo-800 cursor-pointer">Change</p>
+                                </div>
+                                <p class="font-bold">$90/yr</p>
+                            </div>
+                            <div class="w-64 h-0.5 bg-slate-200 mt-1"></div>
+                            <div class="flex justify-between text-xs my-4">
+                                <div>
+                                    <p >Online services</p>
+                                </div>
+                                <p>+$10/yr</p>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <div >
+                                    <p>Larger storage</p>
+                                </div>
+                                <p>+$20/yr</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between text-xs p-3">
                             <div >
-                                <p class="font-bold">Arcade (Yearly)</p>
-                                <p class="underline text-xs hover:text-indigo-800 cursor-pointer">Change</p>
+                                <p>Total (per Year)</p>
                             </div>
-                            <p class="font-bold">$90/yr</p>
+                            <p class="text-blue-600 font-bold">+$120/yr</p>
                         </div>
-                        <div class="w-64 h-0.5 bg-slate-200 mt-1"></div>
-                        <div class="flex justify-between text-xs my-4">
-                            <div>
-                                <p >Online services</p>
-                            </div>
-                            <p>+$10/yr</p>
+                        
+                        <div class="relative">
+                            <button class="absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                            <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-900 text-white hover:bg-indigo-400">Confirm</button>
                         </div>
-                        <div class="flex justify-between text-xs">
-                            <div >
-                                <p>Larger storage</p>
-                            </div>
-                            <p>+$20/yr</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between text-xs p-3">
-                        <div >
-                            <p>Total (per Year)</p>
-                        </div>
-                        <p class="text-blue-600 font-bold">+$120/yr</p>
-                    </div>
-                    
-                    <div class="relative">
-                        <button class="absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
-                        <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-900 text-white hover:bg-indigo-400">Confirm</button>
-                    </div>
-                </form>
-                <div class="thank-you inline-block w-80 text-center">
+                    </form>
+                </div>
+                <div class="thank-you inline-block w-80 text-center hidden">
                     <img class="ml-28" src="./src/images/icon-thank-you.svg" alt="Thank You Icon"/>
                     <h2 class="text-xl font-semibold py-4 ">Thank You!</h2>
                     <p>Thanks for confirming your subscription!, We hope you have fun using our platform. 
