@@ -26,18 +26,16 @@ function showContent(pageId) {
   // onclick to toggle add-ons monthly / yeraly
   let toggleBtn = document.getElementById('toggle-btn');
   toggleBtn.addEventListener( "click", ()=>{
-    let selectBox = document.getElementById("select-box");
-    if (selectBox.value == "monthly"){
-      selectBox.value = "yearly";
-      document.getElementById("price").innerHTML = "$19/mo";
-      } else {
-        selectBox.value = "monthly";
-      }
+    window.onload = function() {
+      showContent('info-section');
+      };
+    // let selectBox = document.getElementById("yearly-plan");
+    // if (selectBox.value == "monthly"){
+    //   selectBox.value = "yearly";
+    //   document.getElementById("price").innerHTML = "$19/mo";
+    //   } else {
+    //     selectBox.value = "monthly";
+    //   }
     });
 
-  // Show content when page loads
-  window.onload = function() {
-    showContent('homePage');
-    };
-
-  // Show content when buttons are clicked
+ 
