@@ -31,12 +31,12 @@ function showContent(pageId) {
       showContent('info-section');
       };
     
-    // if (selectBox.value == "monthly"){
-    //   selectBox.value = "yearly";
-    //   document.getElementById("price").innerHTML = "$19/mo";
-    //   } else {
-    //     selectBox.value = "monthly";
-    //   }
+    if (selectBox.value == "monthly"){
+        selectBox.value = "yearly";
+      document.getElementById("price").innerHTML = "$19/mo";
+      } else {
+        selectBox.value = "monthly";
+      }
     });
 
  
