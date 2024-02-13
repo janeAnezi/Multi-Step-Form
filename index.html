@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="main-content px-7  mx-7 mt-10">
-            <div id="info-section" class=" page-content ">
+            <div id="info-section" class="page-content ">
                 <h1 class="font-bold text-2xl">Personal Info</h1>
                 <p class="text-xs text-slate-600 mb-5">Please provide you name, email address and phone number</p>
                 <form action="">
@@ -54,10 +54,11 @@
                     </label>
 
                     <div class="relative">
-                        <button onclick="showContent('plan-section')" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 hover:bg-blue-900 text-white">Next Step</button>
+                        <button id="next-btn" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 hover:bg-blue-900 text-white">Next Step</button>
                     </div>
                 </form> 
             </div>
+            <!-- personal info ends -->
             <div id="plan-section" class="page-content hidden">
                 <h1 class="font-bold text-2xl">Select Your Plan</h1>
                 <p class="text-xs text-slate-600 mb-5">You have the option of monthly or yearly billing.</p>
@@ -87,8 +88,8 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="plan-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
-                        <button onclick="showContent('add-ons-section')" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 text-white hover:bg-blue-900">Next Step</button>
+                        <button class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button id="next-btn2" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 text-white hover:bg-blue-900">Next Step</button>
                     </div>
                 </form> 
                 <!-- Yearly plan -->
@@ -121,12 +122,13 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="plan-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
-                        <button onclick="showContent('add-ons-section')"class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 text-white hover:bg-blue-900">Next Step</button>
+                        <button class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button id="next-btn2" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-950 text-white hover:bg-blue-900">Next Step</button>
                     </div>
                 </form> 
 
             </div>
+            <!-- select plan ends -->
             <div id="add-ons-section" class="page-content hidden">
                 <h1 class="font-bold text-2xl">Pick add-ons</h1>
                 <p class="text-xs text-slate-600 mb-5">Add-ons help enhance your gaming experience.</p>
@@ -160,8 +162,8 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="add-ons-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
-                        <button onclick="showContent('summary-section')" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-700">Next Step</button>
+                        <button  class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button id="next-btn3" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-700">Next Step</button>
                     </div>
                 </form> 
                 <!-- Yearly add-ons -->
@@ -195,13 +197,13 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="add-ons-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
-                        <button onclick="showContent('summary-section')" class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-700">Next Step</button>
+                        <button  class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button id="next-btn3"  class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-700">Next Step</button>
                     </div>
                 </form> 
             </div>
+            <!-- add-ons ends -->
             <div id="summary-section" class="page-content hidden">
-                
                 <h1 class="font-bold text-2xl">Finishing up</h1>
                 <p class="text-xs text-slate-600 mb-5">Double-check everything looks ok before confirming.</p>
                 <form>
@@ -235,13 +237,13 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="summary-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button  class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
                         <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-900 text-white hover:bg-indigo-400">Confirm</button>
                     </div>
                 </form>
             
                 <!--yearly summary  -->
-                <form action="" class="hidden" >
+                <form class="hidden" >
                     <div class="mt-6 text-sm bg-slate-50 p-2">
                         <div class="flex justify-between mb-3">
                             <div>
@@ -272,7 +274,7 @@
                     </div>
                     
                     <div class="relative">
-                        <button id="summary-section-btn" class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
+                        <button class="prev-btn absolute left-0 mt-14 text-xs text-slate-900 hover:bg-rose-950 hover:text-white px-3 py-2 rounded-md">Go Back</button>
                         <button class="absolute right-0 mt-14 px-3 py-2 text-xs rounded-md bg-blue-900 text-white hover:bg-indigo-400">Confirm</button>
                     </div>
                 </form>

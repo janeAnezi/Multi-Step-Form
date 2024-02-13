@@ -939,6 +939,10 @@ video {
   text-decoration-line: underline;
 }
 
+.page-content .active {
+  display: block;
+}
+
 .hover\:border-blue-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
@@ -964,9 +968,9 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.hover\:text-indigo-500:hover {
+.hover\:text-indigo-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .hover\:text-indigo-900:hover {
@@ -977,11 +981,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-indigo-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .active\:border-blue-300:active {
