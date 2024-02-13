@@ -23,7 +23,13 @@ function showContent(pageId) {
   
   }
 
- 
+ document.querySelectorAll('.prev-btn').forEach(button => {
+   button.addEventListener('click', ()=>{
+    let currentPage = document.querySelector(".current").id;
+    let prevButton = document.getElementById(currentPage.split("-")[0] +  "-btn");
+    showContent(prevButton.id);
+   })
+});
 
 
  
