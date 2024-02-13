@@ -26,17 +26,6 @@ function showContent(pageId) {
   // onclick to toggle add-ons monthly / yeraly
   let toggleBtn = document.getElementById('toggle-btn');
   let yearlyPlan  = document.getElementById("yearly-plan");
-  toggleBtn.addEventListener( "click", ()=>{
-    window.onload = function() {
-      showContent('info-section');
-      };
-    
-    if (selectBox.value == "monthly"){
-        selectBox.value = "yearly";
-      document.getElementById("price").innerHTML = "$19/mo";
-      } else {
-        selectBox.value = "monthly";
-      }
-    });
+
 
  
