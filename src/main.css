@@ -939,10 +939,6 @@ video {
   text-decoration-line: underline;
 }
 
-.page-content .active {
-  display: block;
-}
-
 .hover\:border-blue-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
@@ -992,3 +988,4 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
+
