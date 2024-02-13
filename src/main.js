@@ -23,9 +23,7 @@ function showContent(pageId) {
   
   }
 
-  // onclick to toggle add-ons monthly / yeraly
-  let toggleBtn = document.getElementById('toggle-btn');
-  let yearlyPlan  = document.getElementById("yearly-plan");
+ 
 
 
  
