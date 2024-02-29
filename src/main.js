@@ -30,5 +30,24 @@ document.getElementById('next-btn').addEventListener('click', function() {
     document.getElementById('plan-section-btn').classList.add('bg-cyan-200');
 });
 
+document.getElementById('prev-btn').addEventListener('click', function() {
+    document.getElementById('info-section').style.display = 'block';
+    document.getElementById('plan-section').style.display = 'none';
+    document.getElementById('info-section-btn').classList.add('bg-cyan-200');
+    document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
+});
+
+document.getElementById('nextButton2').addEventListener('click', function() {
+    document.getElementById('page2').style.display = 'none';
+    document.getElementById('page3').style.display = 'block';
+});
+
+document.getElementById('prevButton2').addEventListener('click', function() {
+    document.getElementById('page2').style.display = 'block';
+    document.getElementById('page3').style.display = 'none';
+});
+
+  
+
 
  
