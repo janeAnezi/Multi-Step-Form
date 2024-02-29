@@ -23,8 +23,12 @@ function showContent(pageId) {
   
   }
 
-
-  
+document.getElementById('next-btn').addEventListener('click', function() {
+    document.getElementById('info-section').style.display = 'none';
+    document.getElementById('plan-section').style.display = 'block';
+    document.getElementById('info-section-btn').classList.remove('bg-cyan-200');
+    document.getElementById('plan-section-btn').classList.add('bg-cyan-200');
+});
 
 
  
