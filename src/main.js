@@ -53,7 +53,20 @@ document.getElementById('prev-btn2').addEventListener('click', function(e) {
   document.getElementById('plan-section-btn').classList.add('bg-cyan-200');
 });
 
-  
+document.getElementById('next-btn3').addEventListener('click', function(e) {
+  e.preventDefault();
+    document.getElementById('summary-section').style.display = 'block';
+    document.getElementById('add-ons-section').style.display = 'none';
+    document.getElementById('summary-section-btn').classList.add('bg-cyan-200');
+    document.getElementById('add-ons-section-btn').classList.remove('bg-cyan-200');
+});
 
+document.getElementById('prev-btn3').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('summary-section').style.display = 'none';
+  document.getElementById('add-ons-section').style.display = 'block';
+  document.getElementById('summary-section-btn').classList.remove('bg-cyan-200');
+  document.getElementById('add-ons-section-btn').classList.add('bg-cyan-200');
+});
 
  
