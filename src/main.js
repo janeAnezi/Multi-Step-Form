@@ -45,12 +45,12 @@ document.getElementById('next-btn2').addEventListener('click', function(e) {
     document.getElementById('add-ons-section-btn').classList.add('bg-cyan-200');
 });
 
-// document.getElementById('prev-btn2').addEventListener('click', function() {
-//   document.getElementById('info-section').style.display = 'block';
-//   document.getElementById('plan-section').style.display = 'none';
-//   document.getElementById('info-section-btn').classList.add('bg-cyan-200');
-//   document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
-// });
+document.getElementById('prev-btn2').addEventListener('click', function() {
+  document.getElementById('info-section').style.display = 'block';
+  document.getElementById('plan-section').style.display = 'none';
+  document.getElementById('info-section-btn').classList.add('bg-cyan-200');
+  document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
+});
 
   
 
