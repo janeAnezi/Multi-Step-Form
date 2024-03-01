@@ -37,15 +37,20 @@ document.getElementById('prev-btn').addEventListener('click', function() {
     document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
 });
 
-document.getElementById('nextButton2').addEventListener('click', function() {
-    document.getElementById('page2').style.display = 'none';
-    document.getElementById('page3').style.display = 'block';
+document.getElementById('next-btn2').addEventListener('click', function(e) {
+  e.preventDefault();
+    document.getElementById('plan-section').style.display = 'none';
+    document.getElementById('add-ons-section').style.display = 'block';
+    document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
+    document.getElementById('add-ons-section-btn').classList.add('bg-cyan-200');
 });
 
-document.getElementById('prevButton2').addEventListener('click', function() {
-    document.getElementById('page2').style.display = 'block';
-    document.getElementById('page3').style.display = 'none';
-});
+// document.getElementById('prev-btn2').addEventListener('click', function() {
+//   document.getElementById('info-section').style.display = 'block';
+//   document.getElementById('plan-section').style.display = 'none';
+//   document.getElementById('info-section-btn').classList.add('bg-cyan-200');
+//   document.getElementById('plan-section-btn').classList.remove('bg-cyan-200');
+// });
 
   
 
