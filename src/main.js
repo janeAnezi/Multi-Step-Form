@@ -24,10 +24,10 @@ function showContent(pageId) {
       }
     });
   
-  }
+}
 
-   // Check if yearly plan is selected and update display accordingly
-   if (yearlyPlanSelected) {
+// Check if yearly plan is selected and update display accordingly
+if (yearlyPlanSelected) {
     document.querySelectorAll('.monthly-plan').forEach(plan => {
         plan.style.display = 'none';
     });
@@ -42,7 +42,7 @@ function showContent(pageId) {
         plan.style.display = 'block';
     });
 }
-}
+
 
 document.getElementById('next-btn').addEventListener('click', function() {
     document.getElementById('info-section').style.display = 'none';
