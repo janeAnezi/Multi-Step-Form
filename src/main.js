@@ -24,8 +24,23 @@ function showContent(pageId) {
       }
     });
   
+    // Check if yearly plan is selected and update display accordingly
+      if (yearlyPlanSelected) {
+        document.querySelectorAll('.monthly-form').forEach(form => {
+            form.style.display = 'none';
+        });
+        document.querySelectorAll('.yearly-form').forEach(form => {
+            form.style.display = 'block';
+        });
+    } else {
+        document.querySelectorAll('.yearly-form').forEach(form => {
+            form.style.display = 'none';
+        });
+        document.querySelectorAll('.monthly-form').forEach(form => {
+            form.style.display = 'block';
+        });
+    }
 }
-
 
 document.getElementById('next-btn').addEventListener('click', function() {
     document.getElementById('info-section').style.display = 'none';
