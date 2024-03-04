@@ -1,3 +1,6 @@
+// Variable to track plan selection
+var yearlyPlanSelected = false;
+
 function showContent(pageId) {
     // Hide all content sections
     var contentSections = document.getElementsByClassName('page-content');
@@ -22,6 +25,24 @@ function showContent(pageId) {
     });
   
   }
+
+   // Check if yearly plan is selected and update display accordingly
+   if (yearlyPlanSelected) {
+    document.querySelectorAll('.monthly-plan').forEach(plan => {
+        plan.style.display = 'none';
+    });
+    document.querySelectorAll('.yearly-plan').forEach(plan => {
+        plan.style.display = 'block';
+    });
+} else {
+    document.querySelectorAll('.yearly-plan').forEach(plan => {
+        plan.style.display = 'none';
+    });
+    document.querySelectorAll('.monthly-plan').forEach(plan => {
+        plan.style.display = 'block';
+    });
+}
+}
 
 document.getElementById('next-btn').addEventListener('click', function() {
     document.getElementById('info-section').style.display = 'none';
@@ -69,4 +90,27 @@ document.getElementById('prev-btn3').addEventListener('click', function(e) {
   document.getElementById('add-ons-section-btn').classList.add('bg-cyan-200');
 });
 
- 
+// toggle year && month
+document.getElementById('toggle-year').addEventListener('click', function() {
+  document.getElementById('toggle-year').style.display = 'none';
+  document.querySelector('.yearly-form').style.display = 'none';
+  document.querySelector('.yearly').style.color = 'grey';
+  document.querySelector('.monthly').style.color = 'black';
+  document.querySelector('.monthly-form').style.display = 'block';
+  document.getElementById('toggle-month').style.display = 'block';
+})
+document.getElementById('toggle-month').addEventListener('click', function() {
+  document.querySelector('.monthly-form').style.display = 'none';
+  document.querySelector('.yearly').style.color = 'black';
+  document.querySelector('.monthly').style.color = 'grey';
+  document.getElementById('toggle-month').style.display = 'none';
+  document.getElementById('toggle-year').style.display = 'block';
+  document.querySelector('.yearly-form').style.display = 'block';
+})
+
+// confirm button
+document.getElementById('confirm-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('summary-section').style.display = 'none';
+  document.querySelector('.thank-you').style.display = 'block';
+})
