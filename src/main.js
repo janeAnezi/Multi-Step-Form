@@ -26,23 +26,6 @@ function showContent(pageId) {
   
 }
 
-// Check if yearly plan is selected and update display accordingly
-if (yearlyPlanSelected) {
-    document.querySelectorAll('.monthly-plan').forEach(plan => {
-        plan.style.display = 'none';
-    });
-    document.querySelectorAll('.yearly-plan').forEach(plan => {
-        plan.style.display = 'block';
-    });
-} else {
-    document.querySelectorAll('.yearly-plan').forEach(plan => {
-        plan.style.display = 'none';
-    });
-    document.querySelectorAll('.monthly-plan').forEach(plan => {
-        plan.style.display = 'block';
-    });
-}
-
 
 document.getElementById('next-btn').addEventListener('click', function() {
     document.getElementById('info-section').style.display = 'none';
@@ -92,7 +75,7 @@ document.getElementById('prev-btn3').addEventListener('click', function(e) {
 
 // toggle year && month
 document.getElementById('toggle-year').addEventListener('click', function() {
-  yearlyPlanSelected = false;
+  
   document.getElementById('toggle-year').style.display = 'none';
   document.querySelector('.yearly-form').style.display = 'none';
   document.querySelector('.yearly').style.color = 'grey';
@@ -101,13 +84,14 @@ document.getElementById('toggle-year').addEventListener('click', function() {
   document.getElementById('toggle-month').style.display = 'block';
 })
 document.getElementById('toggle-month').addEventListener('click', function() {
-  yearlyPlanSelected = true;
+  
   document.querySelector('.monthly-form').style.display = 'none';
   document.querySelector('.yearly').style.color = 'black';
   document.querySelector('.monthly').style.color = 'grey';
   document.getElementById('toggle-month').style.display = 'none';
   document.getElementById('toggle-year').style.display = 'block';
   document.querySelector('.yearly-form').style.display = 'block';
+  
 })
 
 // confirm button
