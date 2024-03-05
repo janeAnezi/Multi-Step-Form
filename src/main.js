@@ -90,7 +90,7 @@ document.getElementById('prev-btn3').addEventListener('click', function(e) {
 
 // toggle year && month
 document.getElementById('toggle-year').addEventListener('click', function() {
-  
+  yearlyPlanSelected = false;
   document.getElementById('toggle-year').style.display = 'none';
   document.querySelector('.yearly-form').style.display = 'none';
   document.querySelector('.yearly').style.color = 'grey';
@@ -99,7 +99,7 @@ document.getElementById('toggle-year').addEventListener('click', function() {
   document.getElementById('toggle-month').style.display = 'block';
 })
 document.getElementById('toggle-month').addEventListener('click', function() {
-  
+  yearlyPlanSelected = true;
   document.querySelector('.monthly-form').style.display = 'none';
   document.querySelector('.yearly').style.color = 'black';
   document.querySelector('.monthly').style.color = 'grey';
