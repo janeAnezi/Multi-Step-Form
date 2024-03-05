@@ -5,7 +5,12 @@ module.exports = {
     "./index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'large-screen': "url('./images/bg-sidebar-mobile.svg')",
+        'small-screen': "url('./src/images/bg-sidebar-desktop.svg')",
+      }
+    },
   },
   plugins: [],
 }
